@@ -24,22 +24,19 @@ function comments(state = [], action) {
 			{
 				id: action.id,
 				text: action.text
-			}
-			, ...state.comments];
+			}];
 		case THUMB_UP_COMMENT:
 			return [
 			{
 				id: action.id,
 				votes: action.votes + 1
-			}
-			, ...state,comments];
+			}];
 		case THUMB_UP_COMMENT:
 			return [
 			{
 				id: action.id,
 				votes: action.votes - 1
-			}
-			, ...state,comments];
+			}];
 		default:
 			return state;
 	}
